@@ -38,7 +38,7 @@ const searchFilters = searchQuery ? [{field: 'name', operator: 'contains' as con
             },
             {
                 id: 'department',
-                accessorKey: 'department',
+                accessorKey: 'department.name',
                 size: 150,
                 header: () => <p className={"column-title"}>Department</p>,
                 cell: ({getValue}) => <Badge variant={"secondary"}>{getValue<string>()}</Badge>
